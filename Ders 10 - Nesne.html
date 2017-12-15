@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Dersleri</title>
+	<script type="text/javascript">	
+		
+		var yazdir="Merhaba Dünya";
+		document.write(yazdir.length);
+		
+		function yaz(ad,yas)
+		{
+			this.ad=ad;
+			this.yas=yas;
+		}
+		// nesne tanımlaması
+		var nesne= new yaz("<br>Özgür",21);
+		// nesne tanımlamasında başka bir yöntem
+		nesne2={ozellik1:"<br>deneme", ozellik2:"<br>deneme2"};
+		
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+	document.write(nesne.ad);
+	document.write(nesne.yas);	
+	document.write(nesne2.ozellik1);	
+	document.write(nesne2.ozellik2);	
+</script>	
+</body>
+</html>

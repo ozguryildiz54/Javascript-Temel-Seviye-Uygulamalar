@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Dersleri</title>
+	<script type="text/javascript">			
+		var dizi=new Array("Ali","Osman","Ömer","Ebubekir");
+		var dizi2=new Array("4","3","2","1");
+		var dizi3=dizi.concat(dizi2);
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+var deger=prompt("Bir şeyler yaz!","Varsayılan Değerimiz!");
+document.write(deger+"<br>");
+document.write("Dört büyük sahabe<br>");
+for(i=0;i<4;i++)
+{
+	document.write(dizi2[i]+". Halife ");
+	document.write(dizi[i]+"&emsp;");// &emsp 1 tab karekteri kadar sağa doğru boşluk bırakmaya yarar.
+	
+}
+	document.write("<br>Toplam Halife Sayısı:&emsp;"+dizi.length);
+for(i=0;i<8;i++)
+{
+	document.write("<br>"+dizi3[i]);
+	
+}
+var dizi4=dizi.join(" - ");//dizi elemanları arasına join metodunun içine yazdığım değer koyulur ve varsayılan değeri ',' dür.
+document.write("<br>"+dizi4);
+
+dizi.pop();
+/*Varsayılan olarak dizinin son elemanı silinir. Ancak pop metodunun içerisine dizinin hangi elamanını silmek istiyorsak o elamanın indis numarasını yazarsak o zaman o elemanı siler.*/
+
+document.write("<br>"+dizi[3]);
+
+dizi3.reverse();
+dizi3.push("Bilal-i Habeşi","Hz. Hamza");
+dizi3.sort();
+var dizi5=dizi3.join(" - ");
+document.write("<br>"+dizi5+"<br>");
+
+var dersler=new Array();
+dersler["bilgisayar"]="Bilgisayar Organizasyonu ve Mimarisi";
+dersler["makina"]="Makine elemanları ve Termodinamik";
+dersler["elektrik"]="Elektrik Makineleri ve Elektromanyetik Dalga teorisi";
+document.write(dersler["bilgisayar"]+"&emsp;"+dersler["makina"]+"&emsp;"+dersler["elektrik"]+"<br>");
+</script>	
+</body>
+</html>

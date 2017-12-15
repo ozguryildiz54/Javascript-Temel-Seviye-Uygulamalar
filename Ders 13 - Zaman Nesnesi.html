@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Dersleri</title>
+</head>
+<body>
+<script type="text/javascript">
+	function zaman()
+	{
+		var sure=new Date();
+		var saat=sure.getHours();
+		var dakika=sure.getMinutes();
+		var saniye=sure.getSeconds();
+		document.write(saat+"."+dakika+"."+saniye+"<br>");
+	}
+	setInterval("zaman()",1000);
+</script>	
+</body>
+</html>

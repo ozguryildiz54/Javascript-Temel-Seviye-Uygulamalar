@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Dersleri</title>
+</head>
+<body>
+<form name="pencere">
+Ad<input type="text" name="ad"/><br>
+Şifre<input type="password" name="sifre"/><br>
+<input type="button" value="Giriş Yap"/><br>
+</form>
+<script type="text/javascript">
+	var nesne=document.forms[0].length;
+	document.write(nesne+"<br>");
+	var nesne2=document.forms[0].elements[0].name;
+	var nesne3=document.forms[0].elements[1].name;
+	document.write(nesne2+"<br>");
+	document.write(nesne3+"<br>");
+	var nesne4=document.pencere.elements[0].name;
+	var nesne5=document.pencere.sifre.name;
+	document.write(nesne4+"<br>");
+	document.write(nesne5+"<br>");
+</script>	
+</body>
+</html>
